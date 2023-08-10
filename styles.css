@@ -1,0 +1,57 @@
+
+/*Pestaña Inicio*/
+.entrada{
+    background-color: lightgrey;
+    height: 400px;
+    width: 100%;
+}
+
+.entrada__contenedor{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 60px;
+}
+
+.entrada__contenedor p{
+    max-width: 500px;
+    text-align: center;
+}
+
+.headings{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.headings h1:nth-child(1){
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Pestaña Pricings*/
+
+.header_pricings{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_pricings p:nth-child(2){
+    max-width: 500px;
+}
+
+.precios_contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px){
+    .precios_contenedor{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

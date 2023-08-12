@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="imagenes/black-logo.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <a href="index.html" class="nav-link px-2 text-secondary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html" class="nav-link px-2 text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="aboutus.html" class="nav-link px-2 text-white"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <div class="text-end">
+              <a href="signin.html" class="btn btn-outline-light me-2">Login</a>
+              <a href="#" class="btn btn-warning">Sign-up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="p-5 contenedor-signup">
+      <div class="container mt-5 contenedor-signup__extra-container p-5">
+        <h2 class="text-center mt-5">Sign-up</h2>
+        <div class="row">
+          <div class="col-4-md col-12-lg mb-3">
+            <div class="input-group mb-3">
+              <div class="form-floating username-container">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGroup1"
+                  placeholder="Username"
+                />
+                <label for="floatingInputGroup1">Username</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4-md col-12-lg mb-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4-md col-12-lg mb-3">
+            <div>
+              <label for="inputPassword5" class="form-label">Password</label>
+              <input
+                type="password"
+                id="inputPassword5"
+                class="form-control"
+                aria-describedby="passwordHelpBlock"
+              />
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and
+                numbers, and must not contain spaces, special characters, or
+                emoji.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4-md col-12-lg mb-3">
+            <div>
+              <label for="inputPassword5" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="inputPassword5"
+                class="form-control"
+                aria-describedby="passwordHelpBlock"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4-md col-12-lg">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                I agree to all statements in Terms of Service
+              </label>
+            </div>
+
+            <div class="text-center mt-5">
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="btn-check"
+                autocomplete="off"
+              />
+              <label class="btn btn-primary" for="btn-check"
+                >Confirm Sign-up</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="image-container">
+        <div>
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+            class="img-fluid"
+            alt="Sample image"
+          />
+        </div>
+      </aside>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

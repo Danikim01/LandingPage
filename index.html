@@ -8,61 +8,99 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+            >
+              <svg
+                class="bi me-2"
+                width="40"
+                height="32"
+                role="img"
+                aria-label="Bootstrap"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li>
+                <a href="index.html" class="nav-link px-2 text-secondary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html" class="nav-link px-2 text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="aboutus.html" class="nav-link px-2 text-white"
+                  >About</a
+                >
+              </li>
+            </ul>
+
+            <div class="text-end">
+              <a href="signin.html" class="btn btn-outline-light me-2">Login</a>
+              <a href="#" class="btn btn-warning">Sign-up</a>
+            </div>
+          </div>
+        </div>
+      </header> -->
+
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="imagenes/black-logo.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <a href="index.html" class="nav-link px-2 text-secondary"
+                  >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Características</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Precios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+              <li>
+                <a href="pricing.html" class="nav-link px-2 text-white"
+                  >Pricing</a
                 >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Acción</a></li>
-                  <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                </ul>
+              </li>
+              <li>
+                <a href="aboutus.html" class="nav-link px-2 text-white"
+                  >About</a
+                >
               </li>
             </ul>
-
-
+            <div class="text-end">
+              <a href="signin.html" class="btn btn-outline-light me-2">Login</a>
+              <a href="signup.html" class="btn btn-warning">Sign-up</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -96,7 +134,7 @@
           <div class="col-lg-4 text-center">
             <img
               class="rounded-circle"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              src="imagenes/pexels-web-donut-19090.jpg"
               alt="Generic placeholder image"
               width="140"
               height="140"
@@ -118,7 +156,7 @@
           <div class="col-lg-4 text-center">
             <img
               class="rounded-circle"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              src="https://source.unsplash.com/P44RIGl9V54"
               alt="Generic placeholder image"
               width="140"
               height="140"
@@ -140,7 +178,7 @@
           <div class="col-lg-4 text-center">
             <img
               class="rounded-circle"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              src="https://source.unsplash.com/-RBuQ2PK_L8"
               alt="Generic placeholder image"
               width="140"
               height="140"
@@ -185,7 +223,7 @@
               data-src="holder.js/500x500/auto"
               alt="500x500"
               style="width: 500px; height: 500px"
-              src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_189dd1d14e1%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_189dd1d14e1%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.2800006866455%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+              src="https://source.unsplash.com/8b1cWDyvT7Y"
               data-holder-rendered="true"
             />
           </div>
@@ -211,7 +249,7 @@
               class="featurette-image img-fluid mx-auto"
               data-src="holder.js/500x500/auto"
               alt="500x500"
-              src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_189dd1d14e3%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_189dd1d14e3%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.2800006866455%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+              src="https://source.unsplash.com/JYGnB9gTCls"
               data-holder-rendered="true"
               style="width: 500px; height: 500px"
             />
@@ -237,7 +275,7 @@
               class="featurette-image img-fluid mx-auto"
               data-src="holder.js/500x500/auto"
               alt="500x500"
-              src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_189dd1d14e4%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_189dd1d14e4%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.2800006866455%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+              src="https://source.unsplash.com/XtUd5SiX464"
               data-holder-rendered="true"
               style="width: 500px; height: 500px"
             />
@@ -249,18 +287,66 @@
         <!-- /END THE FEATURETTES -->
       </div>
       <!-- /.container -->
+
+      <div class="container text-center">
+        <h1 class="mb-5">Nuestra Galeria</h1>
+        <div class="row mb-5">
+          <div class="col-12 col-md-4 col-lg-2">
+            <img
+              src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <img
+              src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <img
+              src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <img
+              src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <img
+              src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <img
+              src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="container">
       <div class="row justify-content-center">
-        <div class="col-md-12  text-center">
+        <div class="col-md-12 text-center">
           <p>
             © 2017-2018 Company, Inc. · <a href="#">Privacy</a> ·
             <a href="#">Terms</a>
           </p>
         </div>
-        <div class="col-md-4  text-center">
+        <div class="col-md-4 text-center">
           <h5>Características</h5>
           <ul class="list-unstyled text-small">
             <li><a class="link-secondary" href="#">Cosas cool</a></li>
@@ -277,7 +363,7 @@
             <li><a class="link-secondary" href="#">La última</a></li>
           </ul>
         </div>
-        <div class="col-md-4  text-center">
+        <div class="col-md-4 text-center">
           <h5>Recursos</h5>
           <ul class="list-unstyled text-small">
             <li><a class="link-secondary" href="#">Nombre del recurso</a></li>
@@ -286,7 +372,7 @@
             <li><a class="link-secondary" href="#">Recurso final</a></li>
           </ul>
         </div>
-        <div class="col-md-4  text-center">
+        <div class="col-md-4 text-center">
           <h5>Acerca</h5>
           <ul class="list-unstyled text-small">
             <li><a class="link-secondary" href="#">Equipo</a></li>

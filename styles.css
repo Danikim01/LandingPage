@@ -10,7 +10,7 @@ header nav div ul li a:hover{
     color: azure;
 }
 
-/*Pestaña Sign-Up*/
+/************************************************************Pestaña Sign-Up*********************************************************/
 .username-container{
     width: 100%;
 }
@@ -55,7 +55,7 @@ aside.image-container{
     grid-area: imagen;
 }
 
-/*Pestaña Inicio*/
+/********************************************************Pestaña Inicio********************************************************************/
 .entrada{
     background-color: lightgrey;
     height: 600px;
@@ -84,7 +84,7 @@ aside.image-container{
     margin-bottom: 50px;
 }
 
-/*Pestaña Pricings*/
+/***************************************************************Pestaña Pricings**********************************************************/
 
 .header_pricings{
     margin-top: 70px;
@@ -112,7 +112,7 @@ aside.image-container{
     }
 }
 
-/*Pestaña AboutUs*/
+/**********************************************************Pestaña AboutUs*************************************************************************/
 
 #about_us_body{
     display: grid;
@@ -231,7 +231,7 @@ footer{
     grid-area: footer;
 }
 
-/*Sign IN*/
+/***************************************************************Pestaña Sign In********************************************************************/
 
 .signin-container{
     display: flex;

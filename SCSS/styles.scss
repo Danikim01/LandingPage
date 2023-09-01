@@ -114,12 +114,12 @@ nav{
         align-items: center;
     }
 
-    .container-welcome{
-        .logo-container{
-            background-color: transparent;
-            img.logo{
-                display: none;
-            }
+    .logo-container{
+        span{
+            display: none;
+        }
+        h1{
+            display: none;
         }
     }
 

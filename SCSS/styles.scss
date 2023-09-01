@@ -8,6 +8,15 @@ $entrada_heigth_padding: 600px;
 
 
 nav{
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        font-size: 40px; /* Modify this value to adjust the icon size */
+        color: rgb(255, 60, 0);
+    }
     div{
         ul{
             li{
@@ -76,7 +85,21 @@ nav{
     }
 }
 
-
+.logo-container{
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        font-size: 250px; /* Modify this value to adjust the icon size */
+        color: rgb(255, 60, 0);
+    }
+    h1{
+        color:#F4F4F4;
+        font-weight: 600;
+    }
+}
   
 
 .container-intro{
@@ -146,21 +169,12 @@ header#index-header{
     }
 }
 
-.logo-container {
-    background-color: #f2f2f2; /* Background color of the container */
-    padding: 40px;
-    .logo {
-        width: 150px; /* Adjust the width as needed */
-      }
-}
-  
 
 
 .container-welcome{
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
     text-align: center;
     transform: translate(-50%,-50%);
     p{
@@ -214,7 +228,6 @@ header#index-header{
 
 
 #productos-populares{
-    /*only if the img is class "rounded circle"*/
     img.rounded-circle{
         transition: all 1s;
         &:hover{

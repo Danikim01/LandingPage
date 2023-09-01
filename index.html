@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="css copy/bootstrap.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark fixed-top"
-      >
+  <body id="index-body">
+    <header id="index-header">
+      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -62,33 +60,22 @@
           </div>
         </div>
       </nav>
+      <div class="container-welcome">
+        <h1>Hello World!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil
+          quidem aut repellendus voluptate minus numquam eaque laboriosam
+          delectus culpa. Quibusdam nam doloribus et facilis accusantium quis
+          laborum neque itaque.
+        </p>
+        <button class="main-btn"><a href="#">Learn more »</a></button>
+      </div>
     </header>
 
     <main role="main">
-      <div class="jumbotron entrada">
-        <div class="container entrada__contenedor">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>
-            This is a template for a simple marketing or informational website.
-            It includes a large callout called a jumbotron and three supporting
-            pieces of content. Use it as a starting point to create something
-            more unique.
-          </p>
-          <p>
-            <!-- <a class="btn btn-primary btn-lg main-btn" href="#" role="button"
-              >Learn more »</a
-            > -->
-            <button class="main-btn"><a href="#">Learn more »</a></button>
-          </p>
-        </div>
-      </div>
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing headings">
-        <h1>Nuestros productos populares</h1>
-        <!-- Three columns of text below the carousel -->
+      <div id="productos-populares" class="container marketing headings">
+        <h2>Nuestros productos populares</h2>
+            <hr class="featurette-divider" />
         <div class="row">
           <div class="col-lg-4 text-center">
             <img
@@ -98,7 +85,7 @@
               width="140"
               height="140"
             />
-            <h2>Heading</h2>
+            <h3>Heading</h3>
             <p>
               Donec sed odio dui. Etiam porta sem malesuada magna mollis
               euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
@@ -106,13 +93,11 @@
               Praesent commodo cursus magna.
             </p>
             <p>
-              <!-- <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              > -->
-              <button class="view_details-btn"><a href="#">View details »</a></button>
+              <button class="view_details-btn">
+                <a href="#">View details »</a>
+              </button>
             </p>
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4 text-center">
             <img
               class="rounded-circle"
@@ -121,7 +106,7 @@
               width="140"
               height="140"
             />
-            <h2>Heading</h2>
+            <h3>Heading</h3>
             <p>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
               eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
@@ -129,10 +114,11 @@
               mauris condimentum nibh.
             </p>
             <p>
-              <button class="view_details-btn"><a href="#">View details »</a></button>
+              <button class="view_details-btn">
+                <a href="#">View details »</a>
+              </button>
             </p>
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4 text-center">
             <img
               class="rounded-circle"
@@ -141,7 +127,7 @@
               width="140"
               height="140"
             />
-            <h2>Heading</h2>
+            <h3>Heading</h3>
             <p>
               Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
               egestas eget quam. Vestibulum id ligula porta felis euismod
@@ -149,16 +135,16 @@
               condimentum nibh, ut fermentum massa justo sit amet risus.
             </p>
             <p>
-              <button class="view_details-btn"><a href="#">View details »</a></button>
+              <button class="view_details-btn">
+                <a href="#">View details »</a>
+              </button>
             </p>
           </div>
-          <!-- /.col-lg-4 -->
         </div>
-        <!-- /.row -->
-
-        <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider" />
+
+        <!-- <hr class="featurette-divider" />
 
         <div class="row featurette">
           <div class="col-md-7">
@@ -238,14 +224,14 @@
           </div>
         </div>
 
-        <hr class="featurette-divider" />
-
-        <!-- /END THE FEATURETTES -->
+        <hr class="featurette-divider" /> -->
       </div>
-      <!-- /.container -->
 
       <div class="container text-center">
         <h1 class="mb-5">Nuestra Galeria</h1>
+        <div class="image-container">
+          <h2>hollaaa</h2>
+        </div>
         <div class="row mb-5">
           <div class="col-12 col-md-4 col-lg-2">
             <img

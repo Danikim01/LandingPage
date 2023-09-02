@@ -3,343 +3,332 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css copy/bootstrap.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css copy/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
-  <body id="index-body">
-    <header id="index-header">
-      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="imagenes/black-logo.png"
-              alt="Logo"
-              width="50"
-              height="50"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+  <body id="home-body">
+    <nav
+      class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="material-symbols-outlined"> webhook </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+              <a href="index.html" class="nav-link px-2 text-secondary">Home</a>
+            </li>
+            <li>
+              <a href="pricing.html" class="nav-link px-2 text-white"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html" class="nav-link px-2 text-white">About</a>
+            </li>
+          </ul>
+          <div class="text-end">
+            <a href="signin.html" class="btn btn-outline-light me-2">Login</a>
+            <a href="signup.html" class="btn btn-warning">Sign-up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="home-main">
+      <div class="home-video">
+        <video class="bg-video" autoplay="" loop="" muted="">
+          <source src="Videos/video (2160p) (1).mp4" type="video/mp4" | />
+        </video>
+        <div class="container-welcome">
+          <div class="logo-container">
+            <span class="material-symbols-outlined"> webhook </span>
+            <h1>PhoenixStride <br />Enterprises</h1>
+          </div>
+        </div>
+      </div>
+      <section data-aos="fade-up" data-aos-duration="3000">
+        <div class="container-intro">
+          <p>
+            Three decades focused on legal, compliance, and executive
+            recruiting. Our Principals and team of experienced recruiters bring
+            integrity, insight, knowledge, and global networking to each search
+            assignment. We create value for our clients and candidates through
+            our uncompromising devotion to their success.
+          </p>
+          <button class="main-btn">
+            <div class="overlay"></div>
+            <a href="#">Partner with us</a>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li>
-                <a href="index.html" class="nav-link px-2 text-secondary"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="pricing.html" class="nav-link px-2 text-white"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a href="aboutus.html" class="nav-link px-2 text-white"
-                  >About</a
-                >
-              </li>
-            </ul>
-            <div class="text-end">
-              <a href="signin.html" class="btn btn-outline-light me-2">Login</a>
-              <a href="signup.html" class="btn btn-warning">Sign-up</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div
+            class="row featurette ms-5 mt-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="col-md-6 description">
+              <h2 class="featurette-heading">
+                About Preferred <br />
+                Placement.
+              </h2>
+              <p class="lead info">
+                Using our knowledge and passion, we find and recruit the
+                talented candidates our clients want to hire for the long-term.
+                We have the same goal for each candidate: to match them to a
+                role they love, with an organization in which they will thrive
+                and prosper. We reach across all industries and areas of
+                practice to match the best talent with premier clients.
+              </p>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center image1"
+            >
+              <img
+                class="featurette-image img-fluid mx-auto"
+                src="https://preferredplacement.com/wp-content/uploads/2018/02/about2-365x600.png"
+                data-holder-rendered="true"
+              />
+            </div>
+          </div>
+
+          <div
+            class="row featurette ms-5 mt-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center image2"
+            >
+              <img
+                class="featurette-image img-fluid mx-auto"
+                src="https://preferredplacement.com/wp-content/uploads/2018/02/about1-365x600.png"
+                data-holder-rendered="true"
+              />
+            </div>
+            <div class="col-md-6 description">
+              <h2 class="featurette-heading">Our Process</h2>
+              <p class="lead info">
+                Collaboration is the hallmark of our search process. Each
+                assignment receives the personal attention of a Principal as
+                well as an experienced recruiter. We are always engaged in due
+                diligence to better understand our clients’ cultures and values
+                and our candidates’ skills and professional goals. We spend time
+                meeting candidates – either in-person or virtually – to assess
+                their experience and ensure we find the perfect fit.
+              </p>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="container-welcome">
-        <h1>Hello World!</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil
-          quidem aut repellendus voluptate minus numquam eaque laboriosam
-          delectus culpa. Quibusdam nam doloribus et facilis accusantium quis
-          laborum neque itaque.
-        </p>
-        <button class="main-btn"><a href="#">Learn more »</a></button>
-      </div>
-    </header>
+      </section>
 
-    <main role="main">
-      <div id="productos-populares" class="container marketing headings">
-        <h2>Nuestros productos populares</h2>
-            <hr class="featurette-divider" />
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <img
-              class="rounded-circle"
-              src="imagenes/pexels-web-donut-19090.jpg"
-              alt="Generic placeholder image"
-              width="140"
-              height="140"
-            />
-            <h3>Heading</h3>
+      <section id="services" class="mt-5">
+        <h2 data-aos="fade-up" data-aos-duration="3000">Services</h2>
+        <div id="services__items">
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1600"
+          >
+            <span class="material-symbols-outlined"> design_services </span>
+            <h2>Design Services</h2>
             <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              soluta, pariatur quibusdam laudantium blanditiis, sapiente laborum
+              similique placeat saepe officia suscipit ratione, eveniet
+              doloremque quas?
             </p>
-            <p>
-              <button class="view_details-btn">
-                <a href="#">View details »</a>
-              </button>
-            </p>
+            <button class="learn-more-btn"><a href="#">Learn more »</a></button>
           </div>
-          <div class="col-lg-4 text-center">
-            <img
-              class="rounded-circle"
-              src="https://source.unsplash.com/P44RIGl9V54"
-              alt="Generic placeholder image"
-              width="140"
-              height="140"
-            />
-            <h3>Heading</h3>
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1700"
+          >
+            <span class="material-symbols-outlined"> medical_services </span>
+            <h2>Medical Services</h2>
             <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              soluta, pariatur quibusdam laudantium blanditiis, sapiente laborum
+              similique placeat saepe officia suscipit ratione, eveniet
+              doloremque quas?
             </p>
-            <p>
-              <button class="view_details-btn">
-                <a href="#">View details »</a>
-              </button>
-            </p>
+            <button class="learn-more-btn"><a href="#">Learn more »</a></button>
           </div>
-          <div class="col-lg-4 text-center">
-            <img
-              class="rounded-circle"
-              src="https://source.unsplash.com/-RBuQ2PK_L8"
-              alt="Generic placeholder image"
-              width="140"
-              height="140"
-            />
-            <h3>Heading</h3>
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1800"
+          >
+            <span class="material-symbols-outlined"> cleaning_services </span>
+            <h2>Cleaning services</h2>
             <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              soluta, pariatur quibusdam laudantium blanditiis, sapiente laborum
+              similique placeat saepe officia suscipit ratione, eveniet
+              doloremque quas?
             </p>
+            <button class="learn-more-btn"><a href="#">Learn more »</a></button>
+          </div>
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1900"
+          >
+            <span class="material-symbols-outlined"> electrical_services </span>
+            <h2>Electrical services</h2>
             <p>
-              <button class="view_details-btn">
-                <a href="#">View details »</a>
-              </button>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              soluta, pariatur quibusdam laudantium blanditiis, sapiente laborum
+              similique placeat saepe officia suscipit ratione, eveniet
+              doloremque quas?
             </p>
+            <button class="learn-more-btn"><a href="#">Learn more »</a></button>
           </div>
         </div>
-
-        <hr class="featurette-divider" />
-
-        <!-- <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              First featurette heading.
-              <span class="text-muted">It'll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img
-              class="featurette-image img-fluid mx-auto"
-              data-src="holder.js/500x500/auto"
-              alt="500x500"
-              style="width: 500px; height: 500px"
-              src="https://source.unsplash.com/8b1cWDyvT7Y"
-              data-holder-rendered="true"
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Oh yeah, it's that good.
-              <span class="text-muted">See for yourself.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img
-              class="featurette-image img-fluid mx-auto"
-              data-src="holder.js/500x500/auto"
-              alt="500x500"
-              src="https://source.unsplash.com/JYGnB9gTCls"
-              data-holder-rendered="true"
-              style="width: 500px; height: 500px"
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              And lastly, this one. <span class="text-muted">Checkmate.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img
-              class="featurette-image img-fluid mx-auto"
-              data-src="holder.js/500x500/auto"
-              alt="500x500"
-              src="https://source.unsplash.com/XtUd5SiX464"
-              data-holder-rendered="true"
-              style="width: 500px; height: 500px"
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" /> -->
-      </div>
-
-      <div class="container text-center">
-        <h1 class="mb-5">Nuestra Galeria</h1>
-        <div class="image-container">
-          <h2>hollaaa</h2>
-        </div>
-        <div class="row mb-5">
-          <div class="col-12 col-md-4 col-lg-2">
-            <img
-              src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-md-4 col-lg-2">
-            <img
-              src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-md-4 col-lg-2">
-            <img
-              src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-md-4 col-lg-2">
-            <img
-              src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-md-4 col-lg-2">
-            <img
-              src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-md-4 col-lg-2">
-            <img
-              src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center mt-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="footer-logo-container">
+            <span class="material-symbols-outlined"> webhook </span>
+            <div><strong>PhoenixStride <br />Enterprises</strong></div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-5 text-center">
+          <strong>STAY CONNECTED</strong>
           <p>
-            © 2017-2018 Company, Inc. · <a href="#">Privacy</a> ·
-            <a href="#">Terms</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas est
+            fugit ut deserunt facere perspiciatis.
+          </p>
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <button id="btn-submit" type="submit" class="mt-3">Subscribe</button>
+          </form>
+          <div class="wrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center p-5">
+          <strong>Why choose us?</strong>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            amet labore aut perferendis reprehenderit aspernatur eveniet cumque
+            iste ipsa numquam totam, at vero eum laboriosam.
           </p>
         </div>
-        <div class="col-md-12 text-center mt-5 mb-5">
-          <h5>Contact Us</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <p>Email: unemail@gmail.com</p>
-            </li>
-            <li>
-              <p>Telefono: 1234-6789</p>
-            </li>
-            <li>
-              <p>Direccion: Unadireccion 1349</p>
-            </li>
-          </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center p-5">
+          <strong>More details</strong>
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Equipo</a></li>
+                <li><a class="link-secondary" href="#">Ubicación</a></li>
+                <li><a class="link-secondary" href="#">Privacidad</a></li>
+                <li><a class="link-secondary" href="#">Términos</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a class="link-secondary" href="#">Nombre del recurso</a>
+                </li>
+                <li><a class="link-secondary" href="#">Recurso</a></li>
+                <li><a class="link-secondary" href="#">Otro recurso</a></li>
+                <li><a class="link-secondary" href="#">Recurso final</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Cosas cool</a></li>
+                <li>
+                  <a class="link-secondary" href="#">Característica random</a>
+                </li>
+                <li><a class="link-secondary" href="#">Otra más</a></li>
+                <li><a class="link-secondary" href="#">La última</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <h5>Características</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Cosas cool</a></li>
-            <li>
-              <a class="link-secondary" href="#">Característica random</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="#">Característica de equipo</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="#">Cosa de desarrolladores</a>
-            </li>
-            <li><a class="link-secondary" href="#">Otra más</a></li>
-            <li><a class="link-secondary" href="#">La última</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-center">
-          <h5>Recursos</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Nombre del recurso</a></li>
-            <li><a class="link-secondary" href="#">Recurso</a></li>
-            <li><a class="link-secondary" href="#">Otro recurso</a></li>
-            <li><a class="link-secondary" href="#">Recurso final</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-center">
-          <h5>Acerca</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Equipo</a></li>
-            <li><a class="link-secondary" href="#">Ubicación</a></li>
-            <li><a class="link-secondary" href="#">Privacidad</a></li>
-            <li><a class="link-secondary" href="#">Términos</a></li>
-          </ul>
-        </div>
+      </div>
+
+      <div class="col-md-12 text-center mt-5">
+        <p>
+          © 2017-2018 Company, Inc. · <a href="#">Privacy</a> ·
+          <a href="#">Terms</a>
+        </p>
       </div>
     </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

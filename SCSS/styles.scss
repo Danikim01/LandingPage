@@ -1,4 +1,5 @@
 @import "reset";
+@import "icons";
 
 $header_hover_color: lightgray;
 $vista: desktop;
@@ -83,6 +84,31 @@ nav{
             }
         }
     }
+}
+
+.footer-logo-container{
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        font-size: 100px; /* Modify this value to adjust the icon size */
+        color: rgb(255, 60, 0);
+    }
+    div strong{
+        color: #F4F4F4;
+        font-size: 21px;
+    }
+}
+
+input[type="email"] {
+    width: 400px; /* Cambia el ancho según tus preferencias */
+    height: 40px; /* Cambia el alto según tus preferencias */
+}
+
+#btn-submit{
+    height: 40px;
 }
 
 .logo-container{
@@ -445,6 +471,7 @@ aside div{
 }
 
 footer{
+    padding: 60px;
     grid-area: footer;
     background-color: lightgrey;
 }
@@ -507,22 +534,24 @@ body{
 }
 
 .main-btn{
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 21px;
-    font-family: 'Poppins', sans-serif;
-    background-color: green;
-    transition: background-color 3s;
-    &:hover{
-        background-color: lightgreen;
-    }
+    background-color: rgb(255, 77, 0);
+    position: relative;
+    border: none;
+    height: 70px;
+    width: 250px;  
     a{
         text-decoration: none;
-        color: aliceblue;
+        font-size: 21px;
+        color: white;
+        z-index: 1;
         &:hover{
-            font-weight: 900;
             color: white;
+            font-weight: 700;
         }
+    }
+    transition: all 0.5s;
+    &:hover{
+        background-color: orange;
     }
 }
 

@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
   <body id="home-body">
     <nav
@@ -60,17 +65,12 @@
         </video>
         <div class="container-welcome">
           <div class="logo-container">
-            <!-- <img
-              class="logo"
-              src="imagenes/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg"
-              alt=""
-            /> -->
             <span class="material-symbols-outlined"> webhook </span>
-            <h1>PhoenixStride <br>Enterprises</h1>
+            <h1>PhoenixStride <br />Enterprises</h1>
           </div>
         </div>
       </div>
-      <section>
+      <section data-aos="fade-up" data-aos-duration="3000">
         <div class="container-intro">
           <p>
             Three decades focused on legal, compliance, and executive
@@ -79,13 +79,21 @@
             assignment. We create value for our clients and candidates through
             our uncompromising devotion to their success.
           </p>
-          <button class="main-btn"><a href="#">Learn more »</a></button>
+          <button class="main-btn">
+            <div class="overlay"></div>
+            <a href="#">Partner with us</a>
+          </button>
         </div>
       </section>
 
       <section>
         <div class="container">
-          <div class="row featurette ms-5 mt-5">
+          <div
+            class="row featurette ms-5 mt-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="col-md-6 description">
               <h2 class="featurette-heading">
                 About Preferred <br />
@@ -111,7 +119,12 @@
             </div>
           </div>
 
-          <div class="row featurette ms-5 mt-5">
+          <div
+            class="row featurette ms-5 mt-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div
               class="col-md-6 d-flex align-items-center justify-content-center image2"
             >
@@ -138,9 +151,14 @@
       </section>
 
       <section id="services" class="mt-5">
-        <h2>Services</h2>
+        <h2 data-aos="fade-up" data-aos-duration="3000">Services</h2>
         <div id="services__items">
-          <div id="services__items__item">
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1600"
+          >
             <span class="material-symbols-outlined"> design_services </span>
             <h2>Design Services</h2>
             <p>
@@ -151,7 +169,12 @@
             </p>
             <button class="learn-more-btn"><a href="#">Learn more »</a></button>
           </div>
-          <div id="services__items__item">
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1700"
+          >
             <span class="material-symbols-outlined"> medical_services </span>
             <h2>Medical Services</h2>
             <p>
@@ -162,7 +185,12 @@
             </p>
             <button class="learn-more-btn"><a href="#">Learn more »</a></button>
           </div>
-          <div id="services__items__item">
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1800"
+          >
             <span class="material-symbols-outlined"> cleaning_services </span>
             <h2>Cleaning services</h2>
             <p>
@@ -173,7 +201,12 @@
             </p>
             <button class="learn-more-btn"><a href="#">Learn more »</a></button>
           </div>
-          <div id="services__items__item">
+          <div
+            id="services__items__item"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1900"
+          >
             <span class="material-symbols-outlined"> electrical_services </span>
             <h2>Electrical services</h2>
             <p>
@@ -186,116 +219,110 @@
           </div>
         </div>
       </section>
-
-      <section id="gallery">
-        <div class="container text-center mt-5">
-          <h2 class="mb-5">Check out our gallery</h2>
-          <div class="image-container"></div>
-          <div class="row mb-5">
-            <div class="col-12 col-md-4 col-lg-2">
-              <img
-                src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-            <div class="col-12 col-md-4 col-lg-2">
-              <img
-                src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-            <div class="col-12 col-md-4 col-lg-2">
-              <img
-                src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-            <div class="col-12 col-md-4 col-lg-2">
-              <img
-                src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg"
-                alt=""
-                width="100%"
-              />
-            </div>
-            <div class="col-12 col-md-4 col-lg-2">
-              <img
-                src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-            <div class="col-12 col-md-4 col-lg-2">
-              <img
-                src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center mt-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="footer-logo-container">
+            <span class="material-symbols-outlined"> webhook </span>
+            <div><strong>PhoenixStride <br />Enterprises</strong></div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-5 text-center">
+          <strong>STAY CONNECTED</strong>
           <p>
-            © 2017-2018 Company, Inc. · <a href="#">Privacy</a> ·
-            <a href="#">Terms</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas est
+            fugit ut deserunt facere perspiciatis.
+          </p>
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <button id="btn-submit" type="submit" class="mt-3">Subscribe</button>
+          </form>
+          <div class="wrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center p-5">
+          <strong>Why choose us?</strong>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            amet labore aut perferendis reprehenderit aspernatur eveniet cumque
+            iste ipsa numquam totam, at vero eum laboriosam.
           </p>
         </div>
-        <div class="col-md-12 text-center mt-5 mb-5">
-          <h5>Contact Us</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <p>Email: unemail@gmail.com</p>
-            </li>
-            <li>
-              <p>Telefono: 1234-6789</p>
-            </li>
-            <li>
-              <p>Direccion: Unadireccion 1349</p>
-            </li>
-          </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center p-5">
+          <strong>More details</strong>
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Equipo</a></li>
+                <li><a class="link-secondary" href="#">Ubicación</a></li>
+                <li><a class="link-secondary" href="#">Privacidad</a></li>
+                <li><a class="link-secondary" href="#">Términos</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a class="link-secondary" href="#">Nombre del recurso</a>
+                </li>
+                <li><a class="link-secondary" href="#">Recurso</a></li>
+                <li><a class="link-secondary" href="#">Otro recurso</a></li>
+                <li><a class="link-secondary" href="#">Recurso final</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Cosas cool</a></li>
+                <li>
+                  <a class="link-secondary" href="#">Característica random</a>
+                </li>
+                <li><a class="link-secondary" href="#">Otra más</a></li>
+                <li><a class="link-secondary" href="#">La última</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <h5>Características</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Cosas cool</a></li>
-            <li>
-              <a class="link-secondary" href="#">Característica random</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="#">Característica de equipo</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="#">Cosa de desarrolladores</a>
-            </li>
-            <li><a class="link-secondary" href="#">Otra más</a></li>
-            <li><a class="link-secondary" href="#">La última</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-center">
-          <h5>Recursos</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Nombre del recurso</a></li>
-            <li><a class="link-secondary" href="#">Recurso</a></li>
-            <li><a class="link-secondary" href="#">Otro recurso</a></li>
-            <li><a class="link-secondary" href="#">Recurso final</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-center">
-          <h5>Acerca</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Equipo</a></li>
-            <li><a class="link-secondary" href="#">Ubicación</a></li>
-            <li><a class="link-secondary" href="#">Privacidad</a></li>
-            <li><a class="link-secondary" href="#">Términos</a></li>
-          </ul>
-        </div>
+      </div>
+
+      <div class="col-md-12 text-center mt-5">
+        <p>
+          © 2017-2018 Company, Inc. · <a href="#">Privacy</a> ·
+          <a href="#">Terms</a>
+        </p>
       </div>
     </footer>
 

@@ -260,33 +260,6 @@ nav div ul li:hover {
     display: none;
   }
 }
-header#index-header {
-  background-image: url(/imagenes/pexels-matthew-montrone-1179229.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center; /* Opcional: centrar la imagen en el encabezado */
-  position: relative;
-}
-header#index-header .container-welcome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-header#index-header .container-welcome p {
-  max-width: 400px;
-}
-header#index-header .container-welcome h1 {
-  transition: font-size 2s, font-weight 1s, transform 1s;
-}
-header#index-header .container-welcome h1:hover {
-  font-size: 45px;
-  font-weight: 900;
-  transform: scale(1.5, 1.5);
-}
-
 .container-welcome {
   position: absolute;
   top: 50%;
@@ -364,54 +337,39 @@ header#index-header .container-welcome h1:hover {
   width: 100%;
 }
 
-.contenedor-signup {
-  display: grid;
-  grid-template-areas: "header header" "contenedor imagen";
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: auto auto;
-  align-items: center;
-  gap: 10px;
+.background .shape-signup {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
 }
 
-.contenedor-signup__extra-container {
-  border: 1px solid #ced4da; /* Borde normal */
-  border-radius: 5px; /* Borde redondeado */
-  padding: 8px; /* Espaciado interno */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra en el borde */
-  grid-area: contenedor;
+.shape-signup:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
 }
 
-aside.image-container {
-  grid-area: imagen;
+.shape-signup:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -100px;
+  bottom: -190px;
 }
 
-/********************************************************Pestaña Inicio********************************************************************/
-.entrada {
+.signup-container {
   height: 600px;
-  width: 100%;
-}
-
-.entrada__contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 200px;
-}
-
-.entrada__contenedor p {
-  max-width: 500px;
-  text-align: center;
-}
-
-.headings {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.headings h1:nth-child(1) {
-  text-align: center;
-  margin-bottom: 50px;
+  width: 400px;
+  color: #E6E6E6;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
 }
 
 /***************************************************************Pestaña Contact Us**********************************************************/
@@ -432,16 +390,38 @@ aside.image-container {
   max-width: 500px;
 }
 .contact-us-main .form-container textarea {
-  width: 100%; /* Establece el ancho del textarea al 100% del contenedor */
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  width: 100%;
+  box-sizing: border-box;
 }
-.contact-us-main .form-container .name-and-mail input[type=email] {
-  width: 100%; /* Cambia el ancho según tus preferencias */
-  height: 40px; /* Cambia el alto según tus preferencias */
+.contact-us-main .form-container input[type=email] {
+  width: 100%;
+  height: 40px;
 }
-.contact-us-main .form-container .name-and-mail input[type=text] {
-  width: 100%; /* Cambia el ancho según tus preferencias */
-  height: 40px; /* Cambia el alto según tus preferencias */
+.contact-us-main .form-container input[type=text] {
+  width: 100%;
+  height: 40px;
+}
+.contact-us-main .form-container input[type=tel] {
+  width: 100%;
+  height: 40px;
+}
+.contact-us-main .form-data-container {
+  display: flex;
+  flex-direction: row;
+}
+.contact-us-main .btn-send-data {
+  background-color: #E6E6E6;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+@media (max-width: 768px) {
+  .contact-us-main .form-data-container {
+    flex-direction: column;
+  }
+  .contact-us-main .contact-data-container {
+    margin-top: 50px;
+    text-align: center;
+  }
 }
 
 /**********************************************************Pestaña AboutUs*************************************************************************/
@@ -552,6 +532,14 @@ footer input[type=email] {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 1024px) {
+  .about-us-main .our-gallery {
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7";
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+  }
+}
 
 .image-container {
   position: relative; /* Asegura que el pseudo-elemento esté posicionado correctamente */
@@ -581,12 +569,56 @@ footer input[type=email] {
 }
 
 /***************************************************************Pestaña Sign In********************************************************************/
+#signin-body {
+  background-color: #080710;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
 .signin-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 520px;
+  width: 400px;
+  color: #E6E6E6;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
 }
 
 #info-container {
@@ -600,82 +632,22 @@ footer input[type=email] {
   width: 80%;
 }
 
-body {
-  h1-font-size: 3rem;
-}
-body .entrada {
-  background-color: lightgray;
-  color: black;
-}
-
-@media (max-width: 768px) {
-  aside.image-container {
-    display: none;
-  }
-  .contenedor-signup {
-    grid-template-areas: "header" "contenedor";
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    align-items: center;
-    gap: 10px;
-  }
-  .precios_contenedor {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-.main-btn, .btn-enterprise, .btn-pro, .btn-free, .view_details-btn {
+.main-btn {
   background-color: rgb(255, 77, 0);
   position: relative;
   border: none;
   height: 70px;
   width: 250px;
 }
-.main-btn a, .btn-enterprise a, .btn-pro a, .btn-free a, .view_details-btn a {
+.main-btn a {
   text-decoration: none;
   font-size: 21px;
   color: white;
   z-index: 1;
 }
-.main-btn a:hover, .btn-enterprise a:hover, .btn-pro a:hover, .btn-free a:hover, .view_details-btn a:hover {
+.main-btn a:hover {
   color: white;
   font-weight: 700;
-}
-
-.view_details-btn {
-  font-size: 15px;
-  height: 50px;
-  background-color: lightgray;
-}
-.view_details-btn a {
-  color: black;
-}
-
-/*Declaro un mapa de los botones*/
-.btn-free {
-  background-color: #068FFF;
-  color: white;
-}
-.btn-free:hover {
-  color: black;
-  background-color: white;
-}
-
-.btn-pro {
-  background-color: green;
-  color: white;
-}
-.btn-pro:hover {
-  background-color: #001a00;
-}
-
-.btn-enterprise {
-  background-color: #FF0062;
-  color: white;
-}
-.btn-enterprise:hover {
-  background-color: #660027;
 }
 
 /*# sourceMappingURL=styles.css.map */

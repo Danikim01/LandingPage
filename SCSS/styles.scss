@@ -102,8 +102,6 @@ nav{
     }
 }
 
-
-
 #btn-submit{
     height: 40px;
     width: 120px;
@@ -164,34 +162,6 @@ nav{
         }
     }
 }
-
-header#index-header{
-    background-image: url(/imagenes/pexels-matthew-montrone-1179229.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center; /* Opcional: centrar la imagen en el encabezado */
-    position: relative;
-    .container-welcome{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: white;
-        text-align: center;
-        transform: translate(-50%,-50%);
-        p{
-            max-width: 400px;
-        }
-        h1{
-            transition: font-size 2s, font-weight 1s,transform 1s;
-            &:hover{
-                font-size: 45px;
-                font-weight: 900;
-                transform: scale(1.5,1.5);
-            }
-        }
-    }
-}
-
 
 
 .container-welcome{
@@ -291,33 +261,53 @@ header#index-header{
     gap:10px;
 }
 
-.contenedor-signup{
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "contenedor imagen";
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: auto auto;
-    @include align_items_grid_with_gap;
+.background .shape-signup{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
 }
 
-.contenedor-signup__extra-container{
-    border: 1px solid #ced4da; /* Borde normal */
-    border-radius: 5px; /* Borde redondeado */
-    padding: 8px; /* Espaciado interno */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra en el borde */
-    grid-area: contenedor;
+@mixin orange_ball($right,$bottom){
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: $right;
+    bottom: $bottom;
 }
 
-aside.image-container{
-    grid-area: imagen;
+@mixin blue_ball($left,$top){
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: $left;
+    top: $top;
 }
 
+@mixin data-input-container($height,$width){
+    height: $height;
+    width: $width;
+    color: #E6E6E6;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
 
-/********************************************************Pestaña Inicio********************************************************************/
-.entrada{
-    height: $entrada_heigth_padding;
-    width: 100%;
+.shape-signup:first-child{
+    @include blue_ball(-80px,-80px);
+}
+.shape-signup:last-child{
+    @include orange_ball(-100px,-190px);
 }
 
 @mixin align_items_flex_column($jc_orientation){
@@ -327,29 +317,12 @@ aside.image-container{
     justify-content: $jc_orientation;
 }
 
-.entrada__contenedor{
-    @include align_items_flex_column(center);
-    padding: 200px;
+.signup-container{
+    @include data-input-container(600px,400px);
 }
 
-.entrada__contenedor p{
-    max-width: 500px;
-    text-align: center;
-}
 
-.headings{
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
 
-.headings{
-    h1{
-        &:nth-child(1){
-            text-align: center;
-            margin-bottom: 50px;
-        }
-    }
-}
 
 /***************************************************************Pestaña Contact Us**********************************************************/
 
@@ -370,26 +343,42 @@ aside.image-container{
     }
     .form-container{
         textarea {
-            width: 100%; /* Establece el ancho del textarea al 100% del contenedor */
-            box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-          }
-        .name-and-mail{
-            input[type="email"] {
-                width: 100%; /* Cambia el ancho según tus preferencias */
-                height: 40px; /* Cambia el alto según tus preferencias */
-            }
-            input[type="text"] {
-                width: 100%; /* Cambia el ancho según tus preferencias */
-                height: 40px; /* Cambia el alto según tus preferencias */
-            }
-            
+            width: 100%; 
+            box-sizing: border-box; 
         }
 
+        input[type="email"] {
+            width: 100%; 
+            height: 40px; 
+        }
+        input[type="text"] {
+            width: 100%; 
+            height: 40px; 
+        }
+        input[type="tel"]{
+            width: 100%;
+            height: 40px;
+        }
     }
-
-    
-
-    
+    .form-data-container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .btn-send-data{
+        background-color: #E6E6E6;
+        border: 1px solid black;
+        border-radius: 0px;
+    }
+    @media (max-width: 768px){
+        .form-data-container{
+            flex-direction: column;
+        }
+        .contact-data-container{
+            margin-top: 50px;
+            text-align: center;
+        }
+    }    
 }
 
 
@@ -476,10 +465,20 @@ footer{
                 }
             }
         }
+        @media (max-width:1024px){
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7";
+            justify-items: center;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto auto;
+        }
     }
-
-   
-      
 }
 
 .image-container {
@@ -510,131 +509,37 @@ footer{
 }
 
 
-
-// #about_us_body{
-//     display: grid;
-//     grid-template-areas: 
-//     "header header"
-//     "our_story integrantes"
-//     "aside integrantes"
-//     "footer footer"
-//     ;
-//     grid-template-columns: auto;
-//     grid-template-rows: auto auto auto;
-//     gap: 10px;
-// }
-
-// @media (max-width: 768px){
-//     #about_us_body{
-//         grid-template-areas: 
-//         "header"
-//         "our_story"
-//         "integrantes"
-//         "aside"
-//         "footer"
-//         ;
-//         grid-template-columns: auto;
-//         grid-template-rows: auto auto auto auto auto;
-//         gap: 10px;
-//     }
-// }
-
-// @media (min-width:1200px){
-//     #about_us_body{
-//         grid-template-areas: 
-//         "header header header"
-//         "our_story integrantes aside"
-//         "footer footer footer";
-//         grid-template-columns: 1fr 1fr 1.5fr;
-//         grid-template-rows: auto auto auto;
-//         gap: 10px;
-//     }
-//     aside div img{
-//         height: 600px;
-//     }
-// }
-
-// .header-aboutus {
-//     grid-area: header;
-//     background-image: url(/imagenes/pexels-pixabay-531880.jpg);
-//     background-size: cover;
-//     background-position: center;
-//     color: white;
-//     height: 600px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-bottom: 45px;
-// }
-
-// .header-aboutus h1{
-//     text-align: center;
-//     padding: 150px;
-//     font-size: 60px;
-//     font-family: 'Poppins', sans-serif;
-// }
-
-// .header-aboutus h1:hover{
-//     font-weight: bold;
-//     padding:20px;
-//     background-color: rgb(10, 10, 60);
-//     color: azure;
-
-// }
-
-// #our_story{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     grid-area: our_story;
-//     font-size: 21px;
-//     font-family: 'Poppins', sans-serif;
-//     text-align: center;
-//     padding: 50px;
-// }
-
-// #our_story p{
-//     max-width: 600px;
-// }
-
-// aside{
-//     grid-area: aside;
-//     font-family: 'Poppins', sans-serif;
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-// }
-
-// aside div{
-//     padding: 30px;
-// }
-
-// #integrantes{
-//     grid-area: integrantes;
-//     align-items: center;
-//     font-family: 'Poppins', sans-serif;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// #integrantes .integrantes__integrante{
-//     text-align: center;
-//     padding: 30px;
-// }
-
-// footer{
-//     padding: 60px;
-//     grid-area: footer;
-//     background-color: lightgrey;
-// }
-
 /***************************************************************Pestaña Sign In********************************************************************/
+
+#signin-body{
+    background-color: #080710;
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    @include blue_ball(-80px,-80px);
+}
+.shape:last-child{
+    @include orange_ball(-30px,-80px);
+}
 
 .signin-container{
     @include align_items_flex_column(center);
-    height: 100vh;
+    @include data-input-container(520px,400px);
 }
 
 #info-container{
@@ -645,47 +550,6 @@ footer{
     width: 80%;
 }
 
-body{
-    @if $vista == mobile{
-        h1: {
-            font-size: $h1Mobile;
-        }
-        .entrada{
-            background-color: black;
-            color: aliceblue;
-        }
-    }@else if $vista == desktop{
-        h1: {
-            font-size: $h1Desktop;
-        }
-        .entrada{
-            background-color: $header_hover_color;
-            color:black;
-        }
-    }
-}
-
-@media (max-width: 768px){
-
-    aside.image-container{
-        display: none;
-    }
-
-    .contenedor-signup{
-        grid-template-areas: 
-        "header"
-        "contenedor";
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        @include align_items_grid_with_gap;
-    }
-
-    .precios_contenedor{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
 
 .main-btn{
     background-color: rgb(255, 77, 0);
@@ -705,42 +569,4 @@ body{
     }
 }
 
-.view_details-btn{
-    @extend .main-btn;
-    font-size: 15px;
-    height: 50px;
-    background-color: $header_hover_color;
-    a{
-        color:black;
-    }
-}
 
-/*Declaro un mapa de los botones*/
-
-$btns: (
-    free: #068FFF,
-    pro:green,
-    enterprise: #FF0062,
-);
-
-@each $mode, $color in $btns{
-    .btn-#{$mode}{
-        @extend .main-btn;
-        background-color: $color;
-        color:white;
-        @if $mode == free{
-            &:hover{
-                color:black;
-                background-color: white;
-            }
-        }@else if $mode == pro{
-            &:hover{
-                background-color: darken($color, 20%);
-            }
-        }@else if $mode == enterprise{
-           &:hover{
-                background-color: darken($color, 30%);
-            }
-        }
-    }
-}

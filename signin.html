@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css copy/bootstrap.css" />>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css copy/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
 
-  <body class="text-center">
+  <body id="signin-body">
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
     <header>
-      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark fixed-top">
+      <nav
+        class="navbar navbar-expand-md bg-body-tertiary navbar-dark bg-dark fixed-top"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img
-              src="imagenes/black-logo.png"
-              alt="Logo"
-              width="50"
-              height="50"
-              class="d-inline-block align-text-top"
-            />
+            <span class="material-symbols-outlined"> webhook </span>
           </a>
           <button
             class="navbar-toggler"
@@ -40,8 +44,8 @@
                 >
               </li>
               <li>
-                <a href="pricing.html" class="nav-link px-2 text-white"
-                  >Pricing</a
+                <a href="contactus.html" class="nav-link px-2 text-white"
+                  >Contact Us</a
                 >
               </li>
               <li>
@@ -58,43 +62,44 @@
         </div>
       </nav>
     </header>
-    <main class="form-signin signin-container">
-      <form>
-        <div id="info-container">
-          <h1 class="h3 mb-3 fw-normal">Please Login to your account</h1>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-            />
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              placeholder="Password"
-            />
-          </div>
 
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me" /> Remember me
-            </label>
+    <main class="form-signin text-center">
+      <div class="signin-container">
+        <form>
+          <div id="info-container">
+            <h1 class="h3 mb-3 fw-normal mb-5">Login</h1>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="mb-3">Email address</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" class="form-text text-muted mb-3"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group mt-3">
+              <label for="exampleInputPassword1" class="mb-3">Password</label>
+              <input
+                type="password"
+                class="form-control mb-3"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
           </div>
-          <button type="submit" class="btn btn-primary">Sign In</button>
-          <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
-          <p><a href="index.html">Go Back</a></p>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
     <script src="js/bootstrap.js"></script>
   </body>

@@ -216,11 +216,6 @@ nav div ul li:hover {
   font-size: 21px;
 }
 
-input[type=email] {
-  width: 100%; /* Cambia el ancho según tus preferencias */
-  height: 40px; /* Cambia el alto según tus preferencias */
-}
-
 #btn-submit {
   height: 40px;
   width: 120px;
@@ -240,6 +235,14 @@ input[type=email] {
   padding-top: 80px;
 }
 
+@media (max-width: 1024px) {
+  .about-us-body-section1 .image1 {
+    display: none;
+  }
+  .about-us-body-section1 .image2 {
+    display: none;
+  }
+}
 @media (max-width: 1124px) {
   #services #services__items {
     display: flex;
@@ -251,12 +254,6 @@ input[type=email] {
     display: none;
   }
   .logo-container h1 {
-    display: none;
-  }
-  .image2 img {
-    display: none;
-  }
-  .image1 img {
     display: none;
   }
   .home-video .bg-video {
@@ -326,6 +323,28 @@ header#index-header .container-welcome h1:hover {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .index-section-1 #index-section-1__container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .index-section-1 #index-section-1__container2 {
+    display: grid;
+    grid-template-areas: "description" "image";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+  .index-section-1 #index-section-1__container2 #index-img-2 {
+    grid-area: image;
+  }
+  .index-section-1 #index-section-1__container2 #index-description-2 {
+    grid-area: description;
+  }
+}
 .home-main .container-intro {
   height: 100%;
   width: 100%;
@@ -338,13 +357,6 @@ header#index-header .container-welcome h1:hover {
   font-size: 40px;
   text-align: center;
   max-width: 700px;
-}
-
-#productos-populares img.rounded-circle {
-  transition: all 1s;
-}
-#productos-populares img.rounded-circle:hover {
-  transform: scale(1.3, 1.3) rotate(10deg);
 }
 
 /************************************************************Pestaña Sign-Up*********************************************************/
@@ -402,24 +414,34 @@ aside.image-container {
   margin-bottom: 50px;
 }
 
-/***************************************************************Pestaña Pricings**********************************************************/
-.header_pricings {
-  margin-top: 70px;
-  margin-bottom: 50px;
+/***************************************************************Pestaña Contact Us**********************************************************/
+.contact-us-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.header_pricings p:nth-child(2) {
+.contact-us-main iframe {
+  width: 100%;
+  height: 500px;
+}
+.contact-us-main .title {
+  margin-top: 100px;
+}
+.contact-us-main p {
   max-width: 500px;
 }
-
-.precios_contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.contact-us-main .form-container textarea {
+  width: 100%; /* Establece el ancho del textarea al 100% del contenedor */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+.contact-us-main .form-container .name-and-mail input[type=email] {
+  width: 100%; /* Cambia el ancho según tus preferencias */
+  height: 40px; /* Cambia el alto según tus preferencias */
+}
+.contact-us-main .form-container .name-and-mail input[type=text] {
+  width: 100%; /* Cambia el ancho según tus preferencias */
+  height: 40px; /* Cambia el alto según tus preferencias */
 }
 
 /**********************************************************Pestaña AboutUs*************************************************************************/
@@ -427,10 +449,29 @@ footer {
   background-color: lightgray;
   padding: 60px;
 }
+footer input[type=email] {
+  width: 100%; /* Cambia el ancho según tus preferencias */
+  height: 40px; /* Cambia el alto según tus preferencias */
+}
 
 .about-us-main img {
   width: 100%;
   height: 100%;
+}
+.about-us-main #about-us-title {
+  margin-top: 90px;
+}
+.about-us-main .about-us-body-section1 .image-description-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-us-main .about-us-body-section1 .image-description-container .image1 {
+  margin-right: 100px;
+}
+.about-us-main .about-us-body-section1 .image-description-container .image2 {
+  margin-left: 100px;
 }
 .about-us-main .about-us-body-section2 {
   background-color: lightgray;
@@ -450,6 +491,93 @@ footer {
 }
 .about-us-main #team-holder h3 {
   font-size: 20px;
+  transition: all 0.2s;
+}
+.about-us-main #team-holder h3:hover {
+  color: orange;
+}
+.about-us-main .our-gallery {
+  display: grid;
+  grid-template-areas: "img1 img2 img3 img4 img5" "img1 img6 img6 img7 img5";
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.about-us-main .our-gallery .img-1 {
+  grid-area: img1;
+}
+.about-us-main .our-gallery .img-1 img {
+  width: 100%;
+  height: 100%;
+}
+.about-us-main .our-gallery .img-2 {
+  grid-area: img2;
+}
+.about-us-main .our-gallery .img-2 img {
+  width: 100%;
+  height: 100%;
+}
+.about-us-main .our-gallery .img-3 {
+  grid-area: img3;
+}
+.about-us-main .our-gallery .img-3 img {
+  width: 100%;
+  height: 100%;
+}
+.about-us-main .our-gallery .img-4 {
+  grid-area: img4;
+}
+.about-us-main .our-gallery .img-4 img {
+  width: 100%;
+  height: 100%;
+}
+.about-us-main .our-gallery .img-5 {
+  grid-area: img5;
+}
+.about-us-main .our-gallery .img-5 img {
+  width: 100%;
+  height: 100%;
+}
+.about-us-main .our-gallery .img-6 {
+  grid-area: img6;
+}
+.about-us-main .our-gallery .img-6 img {
+  width: 100%;
+  height: 100%;
+}
+.about-us-main .our-gallery .img-7 {
+  grid-area: img7;
+}
+.about-us-main .our-gallery .img-7 img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  position: relative; /* Asegura que el pseudo-elemento esté posicionado correctamente */
+  overflow: hidden; /* Oculta cualquier contenido fuera del contenedor */
+}
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro semi-transparente */
+  opacity: 0; /* Comienza con una opacidad de 0 (invisible) */
+  transition: opacity 0.3s ease-in-out; /* Agrega una transición suave a la opacidad */
+  pointer-events: none; /* Evita que el pseudo-elemento bloquee eventos del ratón */
+}
+.image-container:hover::before {
+  opacity: 0.4; /* Al hacer hover, se muestra el pseudo-elemento */
+}
+
+.image-translateUpY {
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave al transform */
+}
+.image-translateUpY:hover {
+  transform: translateY(-20px); /* Desplaza el elemento 10px hacia arriba */
 }
 
 /***************************************************************Pestaña Sign In********************************************************************/
@@ -503,7 +631,6 @@ body .entrada {
   border: none;
   height: 70px;
   width: 250px;
-  transition: all 0.5s;
 }
 .main-btn a, .btn-enterprise a, .btn-pro a, .btn-free a, .view_details-btn a {
   text-decoration: none;
@@ -514,9 +641,6 @@ body .entrada {
 .main-btn a:hover, .btn-enterprise a:hover, .btn-pro a:hover, .btn-free a:hover, .view_details-btn a:hover {
   color: white;
   font-weight: 700;
-}
-.main-btn:hover, .btn-enterprise:hover, .btn-pro:hover, .btn-free:hover, .view_details-btn:hover {
-  background-color: orange;
 }
 
 .view_details-btn {

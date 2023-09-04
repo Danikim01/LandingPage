@@ -1,0 +1,46 @@
+@mixin align_items_grid_with_gap{
+    align-items: center;
+    gap:10px;
+}
+
+@mixin orange_ball($right,$bottom){
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin blue_ball($left,$top){
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: $left;
+    top: $top;
+}
+
+@mixin data-input-container($height,$width){
+    height: $height;
+    width: $width;
+    color: #E6E6E6;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+@mixin align_items_flex_column($jc_orientation){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: $jc_orientation;
+}

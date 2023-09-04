@@ -1,0 +1,25 @@
+/************************************************************Pestaña Sign-Up*********************************************************/
+.username-container{
+    width: 100%;
+}
+
+
+.background .shape-signup{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+.shape-signup:first-child{
+    @include blue_ball(-80px,-80px);
+}
+.shape-signup:last-child{
+    @include orange_ball(-100px,-190px);
+}
+
+.signup-container{
+    @include data-input-container(600px,400px);
+}

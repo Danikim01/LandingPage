@@ -1,12 +1,10 @@
 @import "reset";
 @import "icons";
-
-$header_hover_color: lightgray;
-$vista: desktop;
-$h1Desktop: 3rem;
-$h1Mobile: 1.2rem;
-$entrada_heigth_padding: 600px;
-
+@import "mixins";
+@import "sign-up";
+@import "contact-us";
+@import "about-us";
+@import "sign-in";
 
 nav{
     .material-symbols-outlined {
@@ -148,10 +146,7 @@ nav{
     }
 
     .logo-container{
-        span{
-            display: none;
-        }
-        h1{
+        span,h1{
             display: none;
         }
     }
@@ -228,8 +223,6 @@ nav{
             }
         }
     }
-
-
 }
 
 
@@ -251,141 +244,6 @@ nav{
 
 
 
-/************************************************************Pestaña Sign-Up*********************************************************/
-.username-container{
-    width: 100%;
-}
-
-@mixin align_items_grid_with_gap{
-    align-items: center;
-    gap:10px;
-}
-
-.background .shape-signup{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-@mixin orange_ball($right,$bottom){
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: $right;
-    bottom: $bottom;
-}
-
-@mixin blue_ball($left,$top){
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: $left;
-    top: $top;
-}
-
-@mixin data-input-container($height,$width){
-    height: $height;
-    width: $width;
-    color: #E6E6E6;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
-}
-
-.shape-signup:first-child{
-    @include blue_ball(-80px,-80px);
-}
-.shape-signup:last-child{
-    @include orange_ball(-100px,-190px);
-}
-
-@mixin align_items_flex_column($jc_orientation){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: $jc_orientation;
-}
-
-.signup-container{
-    @include data-input-container(600px,400px);
-}
-
-
-
-
-/***************************************************************Pestaña Contact Us**********************************************************/
-
-.contact-us-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    iframe{
-        width: 100%;
-        height: 500px;
-    }
-    .title{
-        margin-top: 100px;
-    }
-    p{
-        max-width: 500px;
-    }
-    .form-container{
-        textarea {
-            width: 100%; 
-            box-sizing: border-box; 
-        }
-
-        input[type="email"] {
-            width: 100%; 
-            height: 40px; 
-        }
-        input[type="text"] {
-            width: 100%; 
-            height: 40px; 
-        }
-        input[type="tel"]{
-            width: 100%;
-            height: 40px;
-        }
-    }
-    .form-data-container{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    .btn-send-data{
-        background-color: #E6E6E6;
-        border: 1px solid black;
-        border-radius: 0px;
-    }
-    @media (max-width: 768px){
-        .form-data-container{
-            flex-direction: column;
-        }
-        .contact-data-container{
-            margin-top: 50px;
-            text-align: center;
-        }
-    }    
-}
-
-
-
-
-
-/**********************************************************Pestaña AboutUs*************************************************************************/
 
 footer{
     background-color: lightgray;
@@ -393,91 +251,6 @@ footer{
     input[type="email"] {
         width: 100%; /* Cambia el ancho según tus preferencias */
         height: 40px; /* Cambia el alto según tus preferencias */
-    }
-}
-
-.about-us-main{
-    img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #about-us-title{
-        margin-top: 90px;
-    }
-
-    .about-us-body-section1{
-        .image-description-container{
-            display: flex;
-            flex-direction: row;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            .image1{
-                margin-right: 100px;
-            }
-            .image2{
-                margin-left: 100px;
-            }
-        }
-    }
-
-    .about-us-body-section2 {
-        background-color: lightgray;
-        width: 100%;
-        height: 100%;
-        display: flex; /* Aplicamos el modelo flexbox */
-        flex-direction: column; /* Alineamos los elementos verticalmente */
-        justify-content: center; /* Centramos verticalmente */
-        align-items: center; /* Centramos horizontalmente */
-        h2{
-            font-size: 40px;
-        }
-        p{
-            max-width: 600px;
-            font-size: 15px;
-        }
-      }
-
-    #team-holder{
-        h3{
-            font-size: 20px;
-            transition: all 0.2s;
-            &:hover{
-                color: orange;
-            }
-        }
-    }
-
-     .our-gallery{
-        display: grid;
-        grid-template-areas: 
-        "img1 img2 img3 img4 img5"
-        "img1 img6 img6 img7 img5";
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto auto;
-        gap: 10px;
-        @for $i from 1 through 7{
-            .img-#{$i}{
-                grid-area: img#{$i};
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-        @media (max-width:1024px){
-            grid-template-areas: 
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "img5"
-            "img6"
-            "img7";
-            justify-items: center;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto auto auto auto;
-        }
     }
 }
 
@@ -506,48 +279,6 @@ footer{
     &:hover {
         transform: translateY(-20px); /* Desplaza el elemento 10px hacia arriba */
     }
-}
-
-
-/***************************************************************Pestaña Sign In********************************************************************/
-
-#signin-body{
-    background-color: #080710;
-}
-
-.background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-.background .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-.shape:first-child{
-    @include blue_ball(-80px,-80px);
-}
-.shape:last-child{
-    @include orange_ball(-30px,-80px);
-}
-
-.signin-container{
-    @include align_items_flex_column(center);
-    @include data-input-container(520px,400px);
-}
-
-#info-container{
-    @include align_items_flex_column(center);
-}
-
-.form-group{
-    width: 80%;
 }
 
 

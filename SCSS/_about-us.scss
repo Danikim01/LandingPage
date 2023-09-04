@@ -1,0 +1,85 @@
+/**********************************************************Pestaña AboutUs*************************************************************************/
+.about-us-main{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #about-us-title{
+        margin-top: 90px;
+    }
+
+    .about-us-body-section1{
+        .image-description-container{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .image1{
+                margin-right: 100px;
+            }
+            .image2{
+                margin-left: 100px;
+            }
+        }
+    }
+
+    .about-us-body-section2 {
+        background-color: lightgray;
+        width: 100%;
+        height: 100%;
+        display: flex; /* Aplicamos el modelo flexbox */
+        flex-direction: column; /* Alineamos los elementos verticalmente */
+        justify-content: center; /* Centramos verticalmente */
+        align-items: center; /* Centramos horizontalmente */
+        h2{
+            font-size: 40px;
+        }
+        p{
+            max-width: 600px;
+            font-size: 15px;
+        }
+      }
+
+    #team-holder{
+        h3{
+            font-size: 20px;
+            transition: all 0.2s;
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+
+     .our-gallery{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 img3 img4 img5"
+        "img1 img6 img6 img7 img5";
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        @for $i from 1 through 7{
+            .img-#{$i}{
+                grid-area: img#{$i};
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        @media (max-width:1024px){
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7";
+            justify-items: center;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto auto;
+        }
+    }
+}
